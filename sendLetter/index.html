@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is for you</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Floating petals -->
+    <div class="petal" style="left:8%;animation-duration:7s;animation-delay:0s;font-size:0.7rem;">🌹</div>
+    <div class="petal" style="left:16%;animation-duration:7s;animation-delay:0s;font-size:0.7rem;">❤️</div>
+    <div class="petal" style="left:22%;animation-duration:9s;animation-delay:1.5s;font-size:0.5rem;">✿</div>
+    <div class="petal" style="left:30%;animation-duration:9s;animation-delay:1.5s;font-size:0.5rem;">💞</div>
+    <div class="petal" style="left:38%;animation-duration:6s;animation-delay:3s;">🌸</div>
+    <div class="petal" style="left:44%;animation-duration:6s;animation-delay:3s;">💘</div>
+    <div class="petal" style="left:55%;animation-duration:8s;animation-delay:0.8s;font-size:0.6rem;">❀</div>
+    <div class="petal" style="left:63%;animation-duration:8s;animation-delay:0.8s;font-size:0.6rem;">🥰</div>
+    <div class="petal" style="left:70%;animation-duration:7.5s;animation-delay:2.2s;">🌹</div>
+    <div class="petal" style="left:77%;animation-duration:7.5s;animation-delay:2.2s;">💖</div>
+    <div class="petal" style="left:85%;animation-duration:10s;animation-delay:0.3s;font-size:0.5rem;">✿</div>
+    <div class="petal" style="left:88%;animation-duration:10s;animation-delay:0.3s;font-size:0.5rem;">💝</div>
+    <div class="petal" style="left:92%;animation-duration:6.5s;animation-delay:4s;font-size:0.6rem;">🌸</div>
+    <div class="petal" style="left:99%;animation-duration:6.5s;animation-delay:4s;font-size:0.6rem;">💌</div>
+
+    <div class="envelope-scene">
+        <p class="open-hint">tap to open</p>
+
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="env-body">
+                <div class="env-left"></div>
+                <div class="env-right"></div>
+                <div class="env-bottom"></div>
+                <div class="env-flap"></div>
+                <div class="seal">💌</div>
+            </div>
+        </div>
+
+        <!-- Letter -->
+        <div class="letter-wrap" id="letter">
+            <div class="letter-paper">
+                <span class="corner-rose tl">❦</span>
+                <span class="corner-rose tr">❦</span>
+                <span class="corner-rose bl">❦</span>
+                <span class="corner-rose br">❦</span>
+
+                <div class="ornament">❧❤️ For You ❤️❧</div>
+
+                <div class="letter-date" id="letter-date"></div>
+
+                <div class="letter-salutation">
+                    <pre class="pre-word">My Dearest,
+                     <!-- piu ❤️ -->
+                </pre>
+                </div>
+
+                <div class="letter-body">
+                    <p>
+                        There are words I have rehearsed a hundred times, yet whenever you are near, they dissolve into
+                        silence — because no sentence feels worthy of what you mean to me. So I write this instead,
+                        hoping that ink and paper can carry what my voice sometimes cannot.
+                    </p>
+                    <p>
+                        You are the kind of person who makes ordinary moments feel like <em>gifts</em>. A shared glance.
+                        The sound of your laughter. The way you say my name. Each of these small things has quietly
+                        rearranged the furniture of my heart, and I find I would not have it any other way.
+                    </p>
+                    <p>
+                        I do not know what the future holds, but I know this: wherever it leads, I want you to be there
+                        — not because I am afraid of being alone, but because everything is simply <em>better</em> when
+                        it is shared with you. You make me want to be more patient, more present, more tender with the
+                        world.
+                    </p>
+                    <p>
+                        So this letter is not an ending, nor a grand declaration. It is just a small, honest note to
+                        say: <em>I see you. I choose you. And I am so glad you are mine.</em>
+                    </p>
+                </div>
+
+                <div class="letter-closing">With all of my love,</div>
+                <div class="letter-signature">Always yours ♡</div>
+
+                <div class="heart-divider">· · · ♥ · · ·</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

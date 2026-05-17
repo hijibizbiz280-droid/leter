@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div id="scene">
+        <div id="chapter"></div>
+        <div id="frame">
+        </div>
+        <div id="text"></div>
+        <div id="dots"></div>
+        <button id="nextBtn" onclick="next()">Continue</button>
+    </div>
+
+    <!-- ── MUSIC PLAYER ── -->
+    <div id="player">
+        <div id="player-vinyl">
+            <div id="player-vinyl-label">
+                <span>&#9834;</span>
+            </div>
+        </div>
+        <div id="player-meta">
+            <div id="player-title">Our Song</div>
+            <div id="player-artist">&#9825; For You</div>
+        </div>
+        <button id="player-play" onclick="toggleMusic()" title="Play / Pause">
+            <svg id="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="6,3 20,12 6,21" />
+            </svg>
+            <svg id="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="4" y="3" width="5" height="18" rx="1" />
+                <rect x="15" y="3" width="5" height="18" rx="1" />
+            </svg>
+        </button>
+        <div id="player-progress-wrap">
+            <span id="player-cur">0:00</span>
+            <div id="player-bar" onclick="seekMusic(event)">
+                <div id="player-fill"></div>
+                <div id="player-dot"></div>
+            </div>
+            <span id="player-dur">0:00</span>
+        </div>
+    </div>
+
+    <audio id="music" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
